@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+</head>
+<body>
+  
+
+
+  
+      <label for="inputcheck">
+        <input type="checkbox" id="inputcheck"> Pay Annually
+    </label>
+   <span id="price"> $10/month </span>
+ <script>
+
+const inputcheck = document.getElementById("inputcheck");
+const subPrice = document.getElementById("price");
+
+
+inputcheck.addEventListener('change', () => {
+  if( inputcheck.checked ){
+    subPrice.innerText = "$100/year";
+  }else{
+     subPrice.innerText = "$10/month";
+  }
+});
+
+ </script>   
+</body>
+</html>
+
